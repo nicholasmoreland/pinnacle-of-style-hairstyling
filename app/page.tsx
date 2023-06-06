@@ -5,24 +5,28 @@ const services = [
   {
     id: 0,
     serviceName: "Women's Basic Cut",
+    serviceDescription: "",
     features: ["Wash", "Haircut"],
     price: "35",
   },
   {
     id: 1,
     serviceName: "Women's Specialty Cut",
+    serviceDescription: "",
     features: ["Wash", "Haircut", "Choice of Style"],
     price: "35+",
   },
   {
     id: 2,
     serviceName: "Men's Basic Cut",
+    serviceDescription: "",
     features: ["Basic Fade", "Complimentary Neck Shave"],
     price: "30",
   },
   {
     id: 3,
     serviceName: "Men's Specialty Cut",
+    serviceDescription: "",
     features: [
       "Textured/Regular Sheer Work",
       "Complimentary Neck Shave",
@@ -48,7 +52,10 @@ export default function Home() {
         </div>
 
         {services.map((service) => (
-          <div className="mx-auto max-w-2xl rounded-3xl ring-1 ring-gray-200 my-4 sm:my-8 lg:mx-0 lg:flex lg:max-w-none">
+          <div
+            key={service.id}
+            className="mx-auto max-w-2xl rounded-3xl ring-1 ring-gray-200 my-6 sm:my-8 lg:mx-0 lg:flex lg:max-w-none"
+          >
             <div className="p-8 sm:p-10 lg:flex-auto">
               <h3 className="text-2xl font-bold tracking-tight text-gray-900">
                 {service.serviceName}
