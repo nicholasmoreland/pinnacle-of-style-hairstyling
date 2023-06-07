@@ -140,7 +140,7 @@ const services = [
 const categories = ["All", "Men", "Women", "Children"];
 
 export default function Home() {
-  const [selectedCategory, setSelectedCategory] = useState("Children");
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
   return (
     <div className="bg-white min-h-screen">
