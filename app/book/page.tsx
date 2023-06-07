@@ -9,13 +9,15 @@ const services = [
     serviceDescription: "",
     features: ["Wash", "Haircut"],
     price: "35",
+    time: "45",
   },
   {
     id: 1,
     serviceName: "Women's Specialty Cut",
     serviceDescription: "",
     features: ["Wash", "Haircut", "Choice of Style"],
-    price: "35+",
+    price: "40+",
+    time: "60",
   },
   {
     id: 2,
@@ -23,6 +25,7 @@ const services = [
     serviceDescription: "",
     features: ["Basic Fade", "Complimentary Neck Shave"],
     price: "30",
+    time: "45",
   },
   {
     id: 3,
@@ -34,7 +37,100 @@ const services = [
       "Mullets",
       "Mowhawks",
     ],
+    price: "35+",
+    time: "60",
+  },
+  {
+    id: 4,
+    serviceName: "Beard Trim w/ Edge Up",
+    serviceDescription: "",
+    features: ["Beard Trim", "Razor Edge Up"],
+    price: "15",
+    time: "15",
+  },
+  {
+    id: 5,
+    serviceName: "Girl's Basic Cut (12 & Under)",
+    serviceDescription: "",
+    features: ["Wash", "Haircut", "Optional Style"],
+    price: "30",
+    time: "35",
+  },
+  {
+    id: 6,
+    serviceName: "Boy's Basic Cut (12 & Under)",
+    serviceDescription: "",
+    features: ["Scissor Cut", "Complimentary Neck Shave"],
+    price: "25",
+    time: "30",
+  },
+  {
+    id: 7,
+    serviceName: "Boy's Specialty Cut (12 & Under)",
+    serviceDescription: "",
+    features: ["Textured/Regular Sheer Work", "Complimentary Neck Shave"],
+    price: "30",
+    time: "40",
+  },
+  {
+    id: 8,
+    serviceName: "Eyebrow Shaping",
+    serviceDescription: "",
+    features: ["Tweeze", "Trim", "Razor Edge Up"],
+    price: "10",
+    time: "10",
+  },
+  {
+    id: 9,
+    serviceName: "Hot Towel Shave (Beard)",
+    serviceDescription: "",
+    features: ["Hot Towel", "Straight Razor", "Shave Cream", "Mini Facial"],
+    price: "30",
+    time: "30",
+  },
+  {
+    id: 10,
+    serviceName: "Hot Towel Shave (Head)",
+    features: ["Hot Towel", "Straight Razor", "Massage", "Mini Head-Acial"],
+    price: "45",
+    time: "50",
+  },
+  {
+    id: 11,
+    serviceName: "Hot Towel Shave (Head & Beard)",
+    serviceDescription: "",
+    features: [
+      "Hot Towel",
+      "Straight Razor",
+      "Massage",
+      "Mini Facial & Head-Acial",
+    ],
+    price: "60",
+    time: "75",
+  },
+  {
+    id: 12,
+    serviceName: "Express Facial",
+    serviceDescription: "",
+    features: ["Facial", "Exfoliate & Moisturize", "Hot Towel", "Massage"],
+    price: "45",
+    time: "50",
+  },
+  {
+    id: 13,
+    serviceName: "Shampoo",
+    serviceDescription: "",
+    features: ["Shampoo", "Conditioner"],
+    price: "10",
+    time: "10",
+  },
+  {
+    id: 14,
+    serviceName: "Shampoo & Style",
+    serviceDescription: "",
+    features: ["Shampoo", "Conditioner", "Blow Dry", "Style of Choice"],
     price: "30+",
+    time: "45",
   },
 ];
 
@@ -110,7 +206,7 @@ export default function Home() {
                     Book Now
                   </a>
                   <p className="mt-6 text-xs leading-5 text-gray-600">
-                    Invoices and receipts available
+                    {service.time} minutes
                   </p>
                 </div>
               </div>
