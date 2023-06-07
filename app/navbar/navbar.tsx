@@ -11,7 +11,7 @@ const navigation = [
 
 const NavBar = () => {
   return (
-    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 sticky top-0 border-b">
+    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 sticky top-0 border-b border-slate-900/10 bg-white/90 backdrop-blur transition-colors z-50 supports-backdrop-blur:bg-white/60">
       <div className="flex h-16 items-center justify-between">
         <div className="flex items-center">
           <div className="flex-shrink-0">
